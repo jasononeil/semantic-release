@@ -89,6 +89,7 @@ test.after.always(async () => {
   await mockServer.stop();
 });
 
+// TODO add test with release on different branches and merge
 test.serial('Release patch, minor and major versions', async t => {
   const packageName = 'test-release';
   const owner = 'git';
